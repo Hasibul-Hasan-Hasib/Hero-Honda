@@ -28,6 +28,9 @@ hr{
     width: 80px;
     border: 1px solid #E76F51;
 }
+p{
+    color: #6C6C6C;
+}
 .user-width{
     width: 150px;
     height: 150px;
@@ -36,6 +39,7 @@ hr{
     color: #E77C40;
 }
 .contact-bg{
+    margin-top: 10rem;
     background-image: url("/images/contact-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
