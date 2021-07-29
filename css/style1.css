@@ -1,7 +1,32 @@
 header{
     background-color: #264653;
 }
+.special-text-color{
+    color: #E76F51;
+}
 .btn-color{
     color: white;
-    background: #E76F51;
+    background-color: #E76F51;
+}
+.unactive{
+    color: #E76F51;
+    background-color: white;
+    border: 1px solid #E76F51;
+}
+.gray-img{
+    filter: grayscale(1);
+}
+.collection-img{
+    width: 288px;
+}
+hr{
+    width: 80px;
+    border: 1px solid #E76F51;
+}
+.user-width{
+    width: 150px;
+    height: 150px;
+}
+.icon-color{
+    color: #E77C40;
 }
