@@ -1,5 +1,12 @@
+
+/* utilities and common */
+
+
 header{
     background-color: #264653;
+}
+p{
+    color: #6C6C6C;
 }
 .special-text-color{
     color: #E76F51;
@@ -8,16 +15,28 @@ header{
     color: white;
     background-color: #E76F51;
 }
-.banner-heading{
-    font: 64px;
-    color: white;
-    font-weight:700;
-}
 .unactive{
     color: #E76F51;
     background-color: white;
     border: 1px solid #E76F51;
 }
+
+
+
+
+
+/* other */
+
+
+
+
+
+#banner-heading{
+    font: 64px;
+    color: white;
+    font-weight:700;
+}
+
 .gray-img{
     filter: grayscale(1);
 }
@@ -28,9 +47,7 @@ hr{
     width: 80px;
     border: 1px solid #E76F51;
 }
-p{
-    color: #6C6C6C;
-}
+
 .user-width{
     width: 150px;
     height: 150px;

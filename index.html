@@ -22,7 +22,12 @@
 
 
 
+
+
         <!-- navbar -->
+
+
+
 
 
 
@@ -39,18 +44,53 @@
                             <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Shop</a>
+                            <a class="nav-link text-light" href="#shop">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">News</a>
+                            <a class="nav-link text-light" href="#news">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Contact</a>
+                            <a class="nav-link text-light" href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <button class="btn px-4 py-1 btn-color">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn px-4 py-1 btn-color" data-bs-toggle="modal"
+                        data-bs-target="#modelId">
                         Login
                     </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Login</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label class="form-label" for="">Email</label>
+                                                <input type="email" class="form-control" name="" id="">
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label" for="">Password</label>
+                                                <input type="password" class="form-control" name="" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Sign
+                                        Up</button>
+                                    <button type="button" class="btn btn-color">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -75,7 +115,7 @@
             <div class="row g-4">
                 <div class="col-md-6 pt-5">
                     <p class="text-white-50 mb-1">Computer-controlled digital transistorized with electronic advance</p>
-                    <h1 class="banner-heading mb-3">Honda CBR 300R</h1>
+                    <h1 class=" mb-3 animate__animated animate__backInDown" id="banner-heading">Honda CBR 300R</h1>
                     <p class="text-white-50">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                         Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                     </p>
@@ -87,7 +127,7 @@
 
 
                     <button type="button" class="btn btn-color py-2 px-5" data-bs-toggle="modal"
-                        data-bs-target="#modelId">
+                        data-bs-target="#purchase">
                         Purchase
                     </button>
 
@@ -97,35 +137,63 @@
 
 
 
-                    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+                    <div class="modal fade" id="purchase" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
                         aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title">Modal title</h5>
+                                    <h5 class="modal-title fw-bold">Payment</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="container-fluid">
-                                        Add rows here
+                                        <div class="row">
+                                            <div class="col-12 mb-3">
+                                                <label class="form-label" for="">Card Number</label>
+                                                <input type="text" class="form form-control" name="" id="">
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label class="form-label" for="">Expiration Date</label>
+                                                        <input type="date" class="form-control" name="" id="">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label class="form-label" for="">Security Code</label>
+                                                        <input type="text" class="form-control" name="" id="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <label class="form-label" for="">First Name</label>
+                                                <input type="text" class="form-control" name="" id="">
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <label class="form-label" for="">Last Name</label>
+                                                <input type="text" class="form-control" name="" id="">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save</button>
+                                    <button type="button" class="btn btn-color">Confirm & Pay</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="images/header-bike.png" class=" img-fluid" alt="">
+                    <img src="images/header-bike.png" class="animate__animated animate__fadeInRight img-fluid" alt="">
                 </div>
         </section>
     </header>
     <main>
+
+
+
+
+
 
 
 
@@ -134,8 +202,13 @@
 
 
 
-        <section class="container my-5 d-flex flex-column align-items-center">
-            <h1 class="fw-bold mt-5 mb-1">Featured Bikes 2<span class="special-text-color">0</span>21</h1>
+
+
+
+
+        <section class="container my-5 d-flex flex-column align-items-center" id="shop">
+            <h1 class="fw-bold mt-5 mb-1">Featured Bikes 2<span
+                    class="special-text-color animate__animated animate__fadeInDownBig">0</span>21</h1>
             <span class="special-text-color">Best bike collection</span>
             <hr class="mt-1 mb-5">
             <div class="row container-fluid px-0">
@@ -166,15 +239,25 @@
 
 
 
-        <!-- bike-card -->
 
 
 
 
-        <section class="container my-5 d-flex flex-column align-items-center">
+
+        <!-- News-card -->
+
+
+
+
+
+
+
+
+
+        <section class="container my-5 d-flex flex-column align-items-center" id="news">
             <h1 class="fw-bold my-5">latest News</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
+                <article class="col">
                     <div class="card h-100 border-0 shadow-sm">
                         <img src="images/bike-1.png" class="card-img-top p-3" alt="...">
                         <div class="card-body">
@@ -191,8 +274,8 @@
                         <div class="card-footer bg-white border-0"> <button class="btn btn-color">Read More</button>
                         </div>
                     </div>
-                </div>
-                <div class="col">
+                </article>
+                <article class="col">
                     <div class="card h-100 border-0 shadow-sm">
                         <img src="images/bike-2.png" class="card-img-top p-3" alt="...">
                         <div class="card-body">
@@ -205,8 +288,8 @@
                         <div class="card-footer bg-white border-0"> <button class="btn btn-color unactive">Read
                                 More</button></div>
                     </div>
-                </div>
-                <div class="col">
+                </article>
+                <article class="col">
                     <div class="card h-100 border-0 shadow-sm">
                         <img src="images/bike-3.png" class="card-img-top p-3" alt="...">
                         <div class="card-body">
@@ -219,14 +302,25 @@
                         <div class="card-footer bg-white border-0"> <button class="btn btn-color unactive">Read
                                 More</button></div>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
 
 
 
 
+
+
+
+
+
         <!-- happy client -->
+
+
+
+
+
+
 
 
 
@@ -300,7 +394,19 @@
 
 
 
+
+
+
+
+
+
         <!-- FAQ -->
+
+
+
+
+
+
 
 
 
@@ -314,7 +420,7 @@
                     </div>
                     <div class="col-md-7 my-5">
                         <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
+                            <div class="accordion-item border-top">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -334,7 +440,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
+                            <br>
+                            <div class="accordion-item border-top">
                                 <h2 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button fw-bold collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
@@ -355,7 +462,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
+                            <br>
+                            <div class="accordion-item border-top">
                                 <h2 class="accordion-header" id="headingThree">
                                     <button class="accordion-button fw-bold collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
@@ -375,7 +483,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item">
+                            <br>
+                            <div class="accordion-item border-top">
                                 <h2 class="accordion-header" id="headingThree">
                                     <button class="accordion-button fw-bold collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
@@ -405,50 +514,63 @@
 
 
 
-        <!-- news -->
 
 
 
-        <section class="container my-5 d-flex flex-column align-items-center">
-            <h1 class="fw-bold my-5">News</h1>
+
+
+        <!-- Race -->
+
+
+
+
+
+
+
+
+
+
+        <section class="container my-5 d-flex flex-column align-items-center" id="race">
+            <h1 class="fw-bold my-5">Race</h1>
             <div class="row">
-                <div class="col-md-6">
+                <article class="col-md-6">
                     <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="images/race-1.jpg" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card-body overflow-hidden">
+                                    <h5 class="card-title">BSB Thruxton: Luke Stapleford
+                                    </h5>
+                                    <p class="card-text">Stapleford, who won the British Supersport title in 2015 before
+                                        competing in the world championship,Stapleford,</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
+                </article>
+                <article class="col-md-6">
                     <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="images/race-2.jpg" class="img-fluid rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card-body overflow-hidden">
+                                    <h5 class="card-title">BSB: MSVR provide new updates</h5>
+                                    <p class="card-text">Stapleford, who won the British Supersport title in 2015 before
+                                        competing in the world championship,Stapleford,</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <article class="col-md-6">
                     <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-md-4">
@@ -456,16 +578,16 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <h5 class="card-title">BSB: MSVR provide new updates</h5>
+                                    <p class="card-text">Stapleford, who won the British Supersport title in 2015 before
+                                        competing in the world championship,Stapleford,</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
+                </article>
+                <article class="col-md-6">
                     <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-md-4">
@@ -473,17 +595,25 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <h5 class="card-title">BSB Thruxton: Luke Stapleford</h5>
+                                    <p class="card-text">Stapleford, who won the British Supersport title in 2015 before
+                                        competing in the world championship,Stapleford,</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
+
+
+
+
+
+
+
+
 
 
 
@@ -491,8 +621,16 @@
 
 
 
-        <section class="container contact-bg mb-5 p-5">
-            <h1 class="fw-bold mb-5 text-center">Contact</h1>
+
+
+
+
+
+
+
+
+        <section class="container contact-bg mb-5 p-5" id="contact">
+            <h1 class="fw-bold mb-5 text-center special-text-color">Contact</h1>
             <form>
                 <div class="mb-3">
                     <label for="" class="form-label">Name</label>
@@ -512,10 +650,15 @@
             </form>
         </section>
     </main>
-    <footer>
 
 
+
+    <footer class="container-fluid d-flex align-items-center justify-content-center">
+        <P class="text-dark">©copyright Hsb-group 2021</P>
     </footer>
+
+
+
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
