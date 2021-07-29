@@ -8,6 +8,11 @@ header{
     color: white;
     background-color: #E76F51;
 }
+.banner-heading{
+    font: 64px;
+    color: white;
+    font-weight:700;
+}
 .unactive{
     color: #E76F51;
     background-color: white;
@@ -29,4 +34,10 @@ hr{
 }
 .icon-color{
     color: #E77C40;
+}
+.contact-bg{
+    background-image: url("/images/contact-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
 }
